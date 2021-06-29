@@ -62,7 +62,7 @@ body {
   font-weight: bold;
 }
 .navbar nav .secondary-nav {
-  margin-top: 5em;
+  margin-top: 2.5em;
 }
 .navbar .mobile-menu-exit {
   float: right;
@@ -72,6 +72,7 @@ body {
   display: flex;
   place-content: space-between;
   margin: 0;
+  background-color: none;
 }
 .navbar .mobile-menu {
   cursor: pointer;
@@ -204,13 +205,24 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu, .mobile-menu-exit {
+  .mobile-menu-exit, .mobile-menu {
     display: none;
+  }
+
+  .img-logo {
+    position: flex;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0.3em;
+  }
+
+  .navbar {
+    height: auto;
   }
 
   .navbar .container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 80px auto;
     justify-content: unset;
   }
 
@@ -226,17 +238,16 @@ body {
   .navbar nav ul {
     display: flex;
   }
-  .navbar nav a {
-    color: var(--text-color);
-    font-size: 1em;
-    padding: 0.1em 1em;
-  }
   .navbar nav ul.primary-nav {
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
   }
   .navbar nav ul.secondary-nav {
     margin: 0;
-    padding: 0;
+  }
+  .navbar nav li a {
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding: 0.7em 1em;
   }
 }/*# sourceMappingURL=main.css.map */
