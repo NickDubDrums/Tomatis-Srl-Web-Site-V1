@@ -30,8 +30,43 @@ body {
   height: 70px;
   z-index: 100;
 }
+.navbar nav.menu-btn {
+  display: block;
+}
 .navbar nav {
   display: none;
+  position: fixed;
+  z-index: 5;
+  width: 60%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: white;
+  padding: 1em;
+}
+.navbar nav ul {
+  list-style: none;
+}
+.navbar nav ul.primary-nav {
+  margin-top: 5em;
+}
+.navbar nav li a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 2.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+.navbar nav li a:hover {
+  font-weight: bold;
+}
+.navbar nav .secondary-nav {
+  margin-top: 8em;
+}
+.navbar .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
 }
 .navbar .container {
   display: flex;

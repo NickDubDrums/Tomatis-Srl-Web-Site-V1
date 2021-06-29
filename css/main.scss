@@ -30,11 +30,58 @@ body {
     z-index: 100;
     
 
+        nav.menu-btn{
+            display: block;
+        }
     
     nav {
         display: none;
+        position: fixed;
+        z-index: 5;
+        width: 60%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: white;
+        padding: 1em;
+
+        ul {
+            list-style: none;
+        }
+
+        ul.primary-nav {
+            margin-top: 5em;
+            
+        }
+
+        li {
+            a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+            padding: 2.5em;
+            font-size: 1.3em;
+            text-align: right;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .secondary-nav {
+            margin-top: 8em;
+        }
+
+
+      
     }
     
+    .mobile-menu-exit {
+        float: right;
+        margin: .5em;
+    }
+
     .container {
         display: flex;
         place-content: space-between;
