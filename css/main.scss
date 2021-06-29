@@ -70,7 +70,7 @@ body {
         }
 
         .secondary-nav {
-            margin-top: 8em;
+            margin-top: 5em;
         }
 
 
@@ -257,10 +257,54 @@ body {
 
 }
 
-
-
 .footer {
     text-align: center;
     font-size: 9px;
     color: #000;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: unset;
+
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+        
+
+        a{
+            color: var(--text-color);
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+            padding: 0;
+        }
+        ul.secondary-nav {
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
