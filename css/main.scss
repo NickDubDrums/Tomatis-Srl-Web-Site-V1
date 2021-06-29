@@ -59,7 +59,7 @@ body {
             color: var(--text-color);
             text-decoration: none;
             display: block;
-            padding: 2.5em;
+            padding: 1.2em;
             font-size: 1.3em;
             text-align: right;
 
@@ -276,19 +276,20 @@ body {
     .img-logo {
         position: flex;  
         object-fit: cover;
-        margin-top: .3em;
+        margin-top: .8em;
+        margin-left: 70px;
         //background-color: violet;
     }
 
     .navbar{
         height: auto;
-        
-
+        padding: unset;
+        position: absolute;
     }
 
     .navbar .container {
         display: grid;
-        grid-template-columns: 80px auto;
+        grid-template-columns: 150px auto;
         justify-content: unset;
  
     }
@@ -306,21 +307,78 @@ body {
             display: flex;
         }
         ul.primary-nav {
-            margin-top: 0;
-            
+            margin-top: 0;           
         }
 
         ul.secondary-nav {
-            margin: 0;
+            margin: 0 ;
+            margin-right: 70px;
             
         }
+
         li a {
             font-size: 1em;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            padding: .7em 1em;
+
+           
+
+                &:hover {
+                    font-weight: normal;
+                    background-color: #f1f1f1;
+                }
         }
 
         
     }
+
+
+    .hero {
+
+        .container {
+            height: 200px;
+        }
+        .img-hero {
+            height: 200px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .text-hero {
+            height: 200px;
+            width: 50%;
+        }
+    }
+
+    .bottom-nav{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+
+
+       li {
+        padding: 5px;
+        }
+
+        .bottom-secondary-nav {
+        
+        
+
+            .riga1, .riga2, .riga3, .riga4 {
+                display: flex;
+                margin: 2em;
+                
+                
+             }
+            
+        }
+
+        
+
+    }
+
 }
