@@ -285,4 +285,44 @@ body {
     display: flex;
     margin: 2em;
   }
+}
+@media only screen and (min-width: 1500px) {
+  .navbar {
+    height: 130px;
+  }
+  .navbar .container {
+    grid-template-columns: 352px auto;
+  }
+  .navbar .img-logo {
+    margin: unset;
+    height: 94px;
+    padding: unset;
+    position: absolute;
+    left: 140px;
+    top: 18px;
+  }
+  .navbar nav li a {
+    font-size: 33px;
+    position: relative;
+    top: 0px;
+  }
+
+  .hero .container {
+    height: 600px;
+    position: relative;
+    top: 50px;
+  }
+  .hero .img-hero {
+    height: 600px;
+  }
+  .hero h1 {
+    font-size: 86px;
+  }
+  .hero p {
+    font-size: 50px;
+  }
+  .hero .text-hero {
+    height: 500px;
+    width: 40%;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -382,3 +382,61 @@ body {
     }
 
 }
+
+@media only screen and (min-width: 1500px) {
+
+    .navbar{
+
+        height: 130px;
+
+        .container{
+            grid-template-columns: 352px auto;
+        }
+
+
+        .img-logo {
+            margin: unset;
+            height: 94px;
+            padding: unset;
+            position: absolute;
+            left: 140px;
+            top: 18px;
+        }
+
+       
+
+        nav li a {
+            font-size: 33px;
+            position: relative;
+            top: 0px;
+           
+        }
+
+    }
+
+    .hero {
+        .container {
+            height: 600px;
+            position: relative;
+            top: 50px;
+        }
+
+        .img-hero {
+            height: 600px;
+        }
+        h1 {
+            font-size: 86px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+        .text-hero {
+            height: 500px;
+            width: 40%;
+        }
+    }
+
+
+}
