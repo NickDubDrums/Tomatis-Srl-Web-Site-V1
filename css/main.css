@@ -31,6 +31,9 @@ body {
   height: 70px;
   z-index: 100;
 }
+.navbar .current a {
+  font-style: bold;
+}
 .navbar nav.menu-btn {
   display: block;
 }
