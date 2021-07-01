@@ -18,7 +18,7 @@ body {
     background: #f2f2f2;
     background-size: cover;
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;;
 }
 
 .navbar {
@@ -176,6 +176,10 @@ body {
 
 }
 .intro-section {
+
+    img {
+        display: none;
+    }
     
     background-color: var(--secondary-color);
     width: 100%;
@@ -334,10 +338,13 @@ body {
     .hero {
 
         .container {
-            height: 200px;
+            height: 220px;
+            position: relative;
+            top: -10px;
+            margin: o;
         }
         .img-hero {
-            height: 200px;
+            height: 220px;
         }
 
         h1 {
@@ -383,14 +390,146 @@ body {
 
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1080px) {
+
+    .navbar{
+
+        height: 100px;
+
+        .container{
+            grid-template-columns: 190px auto;
+        }
+
+
+        .img-logo {
+            margin: unset;
+            height: 65px;
+            padding: unset;
+            position: absolute;
+            left: 70px;
+            top: 18px;
+        }
+
+       
+
+        nav li a {
+            font-size: 26px;
+            position: relative;
+            top: 0px;
+           
+        }
+
+    }
+
+    .hero {
+        .container {
+            height: 350px;
+            position: relative;
+            top: 0px;
+        }
+
+        .img-hero {
+            height: 350px;
+        }
+        h1 {
+            font-size: 70px;
+            
+        }
+
+        p {
+            font-size: 45px;
+        }
+
+        .text-hero {
+            height: 300px;
+            width: 60%;
+        }
+    }
+
+    .intro-section {
+
+    margin-bottom: 150px;        
+
+       img {
+           z-index: 20px;
+           display: flex;
+       }
+
+       .design1 {
+           z-index: 2px;
+           position: absolute;
+           display: flex;
+           background-color: none;
+           width: 100%;
+           height: auto;
+           margin: unset;
+           left: 1em;
+           justify-content: flex-end;
+
+       }
+
+       #design1 {
+           display: unset;
+           position: relative;
+           height: 500px;
+           top: -150px;
+           
+       }
+
+       .design2 {
+        z-index: 2px;
+        position: absolute;
+        display: flex;
+        background-color: none;
+        width: 100%;
+        height: auto;
+        margin: unset;
+        left: -1em;
+        justify-content: flex-start;
+
+        }
+
+        #design2 {
+            display: unset;
+            position: relative;
+            height: 350px;
+            top: 5px;
+            
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 24px;
+            width: 75%;
+        }
+
+        .spaced-text{
+            left: 400px;
+            width: 60%;
+        }
+    }
+
+    .bottom-nav {
+        font-size: 20px;
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1600px) {
 
     .navbar{
 
         height: 130px;
 
         .container{
-            grid-template-columns: 352px auto;
+            grid-template-columns: 320px auto;
         }
 
 
@@ -399,7 +538,7 @@ body {
             height: 94px;
             padding: unset;
             position: absolute;
-            left: 140px;
+            left: 100px;
             top: 18px;
         }
 
@@ -415,6 +554,7 @@ body {
     }
 
     .hero {
+        
         .container {
             height: 600px;
             position: relative;
@@ -435,6 +575,35 @@ body {
         .text-hero {
             height: 500px;
             width: 40%;
+        }
+    }
+
+
+    .intro-section {
+        margin-top: 5em;
+        margin-bottom: 200px;
+
+        #design1 {
+            height: 600px;
+        }
+
+        #design2 {
+            height: 450px;
+            width: auto;
+        }
+
+        .spaced-text {
+            left: 600px;
+        }
+    }
+
+
+
+    .bottom-nav {
+        font-size: 30px;
+
+        a {
+            font-size: 30px;
         }
     }
 
