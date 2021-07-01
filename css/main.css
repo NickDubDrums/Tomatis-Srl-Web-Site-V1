@@ -20,6 +20,7 @@ body {
   background-size: cover;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -294,7 +295,7 @@ body {
 }
 @media only screen and (min-width: 1080px) {
   .navbar {
-    height: 100px;
+    height: 101px;
   }
   .navbar .container {
     grid-template-columns: 190px auto;
@@ -333,6 +334,7 @@ body {
   }
 
   .intro-section {
+    padding: 4em;
     margin-bottom: 150px;
   }
   .intro-section img {
@@ -347,13 +349,14 @@ body {
     width: 100%;
     height: auto;
     margin: unset;
-    left: 1em;
+    left: 0em;
     justify-content: flex-end;
   }
   .intro-section #design1 {
     display: unset;
     position: relative;
     height: 500px;
+    left: 5px;
     top: -150px;
   }
   .intro-section .design2 {
@@ -381,7 +384,7 @@ body {
     width: 75%;
   }
   .intro-section .spaced-text {
-    left: 400px;
+    left: 420px;
     width: 60%;
   }
 
@@ -444,7 +447,7 @@ body {
     width: auto;
   }
   .intro-section .spaced-text {
-    left: 600px;
+    left: 550px;
   }
 
   .bottom-nav {
