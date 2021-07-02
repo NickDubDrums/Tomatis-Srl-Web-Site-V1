@@ -108,113 +108,81 @@ body {
    
     
 }
-.hero {
-    
-    width: 100%;
+.main-section {
+    display: block;
     position: relative;
-    top: 70px;
+    padding-top: 70px;
+    margin-bottom: -70px;
+   
 
-
-    .container {
-        background-color: white;
-        margin: 0;
-        padding: 0;
-        height: 122px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
-
-    .img-hero {
-        
-        position: absolute;
+    .macchinari-title {
+        background-color: var(--primary-color);
+        color: white;
+        padding-left: 1em;
+        padding-right: 1em;
+        box-shadow: #00000016 0px 8px 8px;
         width: 100%;
-        height: 122px;
-        object-fit: cover;
-        z-index: 1;
-        opacity:80%;
+        height: 80px;
+
+                h1 {
+                    position: relative;
+                    top: 25%;
+                    font-weight: normal;
+            }
+        
     }
 
-    h1 {
-        z-index: 2;
-        position: absolute;
-        font-weight: normal;
-        font-size: 30px;
-        letter-spacing: 8px;
+    .macchinari-text {
+        background-color: var(--secondary-color);
         color: white;
-        text-shadow: 4px 6px 11px black;
-        display: flex;
-        top: 30%;
-        
+        padding-left: 1em;
+        padding-right: 1em;
+        box-shadow: #00000016 0px 8px 8px;
+        width: 100%;
+        height: auto;
+
+                p {
+                    position: relative;
+                    font-weight: normal;
+            }
         
     }
-    p {
-        z-index: 2;
-        position: relative;
-        font-weight: normal;
-        font-size: 20px;
-        letter-spacing: 8px;
+
+    .staff-title {
+        margin-top: 1em;
+        background-color: var(--primary-color);
         color: white;
-        text-shadow: 4px 6px 11px black;
-        left: 50%;
-        top: 60%;
-        
+        padding-left: 1em;
+        padding-right: 1em;
+        box-shadow: #00000016 0px 8px 8px;
+        width: 100%;
+        height: 80px;
+
+                h1 {
+                    position: relative;
+                    top: 25%;
+                    font-weight: normal;
+            }
     }
 
-    .text-hero {
-        background-color: none;
-        height: 122px;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width:  70%;
-        
-    }
+    .staff-text {
+        background-color: var(--secondary-color);
+        color: white;
+        padding-left: 1em;
+        padding-right: 1em;
+        box-shadow: #00000016 0px 8px 8px;
+        width: 100%;
+        height: auto;
 
+                p {
+                    position: relative;
+                    font-weight: normal;
+            }
+        }
+
+   
 
     
-
-}
-.intro-section {
-    
-
-    img {
-        display: none;
-    }
-    
-    background-color: var(--secondary-color);
-    width: 100%;
-
-    position: relative;
-    top: 82px;
-
-    padding: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-
-    box-shadow: 0px 4px 8px #00000016; 
-
-    h1 {
-        position: relative;
-        font-weight: normal;
-        font-size: 30px;
-        letter-spacing: 2px;
-        color: white;
-        text-align: left;
-        top: -15px;
-    }
-
-    p {
-        position: relative;
-        font-weight: normal;
-        font-size: 18px;
-        letter-spacing: 0px;
-        color: white;
-        text-align: left; 
-    }
-
 
 }
 
@@ -338,31 +306,7 @@ body {
     }
 
 
-    .hero {
-
-        .container {
-            height: 220px;
-            position: relative;
-            top: -10px;
-            margin: o;
-        }
-        .img-hero {
-            height: 220px;
-        }
-
-        h1 {
-            font-size: 50px;
-        }
-
-        p {
-            font-size: 30px;
-        }
-
-        .text-hero {
-            height: 200px;
-            width: 50%;
-        }
-    }
+ 
 
     .bottom-nav{
        display: flex;
@@ -424,96 +368,19 @@ body {
 
     }
 
-    .hero {
-        .container {
-            height: 350px;
-            position: relative;
-            top: 0px;
-        }
 
-        .img-hero {
-            height: 350px;
-        }
-        h1 {
-            font-size: 70px;
-            
-        }
+    .main-section {
+        padding-top: 100px;
 
+        h1, p {
+            padding-left: 3rem;
+        }
+        
         p {
-            font-size: 45px;
-        }
-
-        .text-hero {
-            height: 300px;
-            width: 60%;
+            font-size: 19px;
         }
     }
 
-    .intro-section { 
-        padding: 4em;
-        margin-bottom: 150px;        
-
-       img {
-           z-index: 20px;
-           display: flex;
-       }
-
-       .design1 {
-           z-index: 2px;
-           position: absolute;
-           display: flex;
-           background-color: none;
-           width: 100%;
-           height: auto;
-           margin: unset;
-           left: 0em;
-           justify-content: flex-end;
-
-       }
-
-       #design1 {
-           display: unset;
-           position: relative;
-           height: 500px;
-           left: 5px;
-           top: -150px;
-           
-       }
-
-       .design2 {
-        z-index: 2px;
-        position: absolute;
-        display: flex;
-        background-color: none;
-        width: 100%;
-        height: auto;
-        margin: unset;
-        left: -1em;
-        justify-content: flex-start;
-
-        }
-
-        #design2 {
-            display: unset;
-            position: relative;
-            height: 350px;
-            top: 5px;
-            
-        }
-
-        h1 {
-            font-size: 40px;
-        }
-        p {
-            font-size: 24px;
-            width: 75%;
-        }
-
-        .spaced-text{
-            left: 420px;
-            width: 60%;
-        }
-    }
 
     .bottom-nav {
         font-size: 20px;
@@ -557,50 +424,40 @@ body {
 
     }
 
-    .hero {
-        
-        .container {
-            height: 600px;
-            position: relative;
-            top: 50px;
+    .main-section {
+        padding-top: 120px;
+
+        .macchinari-title {
+            height:150px;
+
+            h1 {
+                top: 35%;
+            }
         }
 
-        .img-hero {
-            height: 600px;
+        .staff-title {
+            height:150px;
+
+            h1 {
+                top: 35%;
+            }
         }
+
+       
+        h1, p {
+            padding-left: 5rem;
+        }
+
         h1 {
-            font-size: 86px;
+            font-size: 40px;
+            
         }
-
+        
         p {
-            font-size: 50px;
-        }
-
-        .text-hero {
-            height: 500px;
-            width: 40%;
+            font-size: 24px;
+            width: 70%;
         }
     }
-
-
-    .intro-section {
-        margin-top: 5em;
-        margin-bottom: 200px;
-
-        #design1 {
-            height: 600px;
-        }
-
-        #design2 {
-            height: 450px;
-            width: auto;
-        }
-
-        .spaced-text {
-            left: 550px;
-        }
-    }
-
 
 
     .bottom-nav {

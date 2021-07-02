@@ -87,90 +87,66 @@ body {
      object-fit: contain;
 }
 
-.hero {
-  width: 100%;
+.main-section {
+  display: block;
   position: relative;
-  top: 70px;
+  padding-top: 70px;
+  margin-bottom: -70px;
 }
-.hero .container {
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  height: 122px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.hero .img-hero {
-  position: absolute;
+.main-section .macchinari-title {
+  background-color: var(--primary-color);
+  color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: #00000016 0px 8px 8px;
   width: 100%;
-  height: 122px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
-  opacity: 80%;
+  height: 80px;
 }
-.hero h1 {
-  z-index: 2;
-  position: absolute;
-  font-weight: normal;
-  font-size: 30px;
-  letter-spacing: 8px;
-  color: white;
-  text-shadow: 4px 6px 11px black;
-  display: flex;
-  top: 30%;
-}
-.hero p {
-  z-index: 2;
+.main-section .macchinari-title h1 {
   position: relative;
+  top: 25%;
   font-weight: normal;
-  font-size: 20px;
-  letter-spacing: 8px;
-  color: white;
-  text-shadow: 4px 6px 11px black;
-  left: 50%;
-  top: 60%;
 }
-.hero .text-hero {
-  background-color: none;
-  height: 122px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 70%;
-}
-
-.intro-section {
+.main-section .macchinari-text {
   background-color: var(--secondary-color);
+  color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: #00000016 0px 8px 8px;
   width: 100%;
+  height: auto;
+}
+.main-section .macchinari-text p {
   position: relative;
-  top: 82px;
-  padding: 2em;
+  font-weight: normal;
+}
+.main-section .staff-title {
   margin-top: 1em;
-  margin-bottom: 1em;
-  box-shadow: 0px 4px 8px #00000016;
+  background-color: var(--primary-color);
+  color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: #00000016 0px 8px 8px;
+  width: 100%;
+  height: 80px;
 }
-.intro-section img {
-  display: none;
+.main-section .staff-title h1 {
+  position: relative;
+  top: 25%;
+  font-weight: normal;
 }
-.intro-section h1 {
+.main-section .staff-text {
+  background-color: var(--secondary-color);
+  color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: #00000016 0px 8px 8px;
+  width: 100%;
+  height: auto;
+}
+.main-section .staff-text p {
   position: relative;
   font-weight: normal;
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: white;
-  text-align: left;
-  top: -15px;
-}
-.intro-section p {
-  position: relative;
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 0px;
-  color: white;
-  text-align: left;
 }
 
 .bottom-nav {
@@ -260,26 +236,6 @@ body {
     background-color: #f1f1f1;
   }
 
-  .hero .container {
-    height: 220px;
-    position: relative;
-    top: -10px;
-    margin: o;
-  }
-  .hero .img-hero {
-    height: 220px;
-  }
-  .hero h1 {
-    font-size: 50px;
-  }
-  .hero p {
-    font-size: 30px;
-  }
-  .hero .text-hero {
-    height: 200px;
-    width: 50%;
-  }
-
   .bottom-nav {
     display: flex;
     flex-wrap: wrap;
@@ -314,78 +270,14 @@ body {
     top: 0px;
   }
 
-  .hero .container {
-    height: 350px;
-    position: relative;
-    top: 0px;
+  .main-section {
+    padding-top: 100px;
   }
-  .hero .img-hero {
-    height: 350px;
+  .main-section h1, .main-section p {
+    padding-left: 3rem;
   }
-  .hero h1 {
-    font-size: 70px;
-  }
-  .hero p {
-    font-size: 45px;
-  }
-  .hero .text-hero {
-    height: 300px;
-    width: 60%;
-  }
-
-  .intro-section {
-    padding: 4em;
-    margin-bottom: 150px;
-  }
-  .intro-section img {
-    z-index: 20px;
-    display: flex;
-  }
-  .intro-section .design1 {
-    z-index: 2px;
-    position: absolute;
-    display: flex;
-    background-color: none;
-    width: 100%;
-    height: auto;
-    margin: unset;
-    left: 0em;
-    justify-content: flex-end;
-  }
-  .intro-section #design1 {
-    display: unset;
-    position: relative;
-    height: 500px;
-    left: 5px;
-    top: -150px;
-  }
-  .intro-section .design2 {
-    z-index: 2px;
-    position: absolute;
-    display: flex;
-    background-color: none;
-    width: 100%;
-    height: auto;
-    margin: unset;
-    left: -1em;
-    justify-content: flex-start;
-  }
-  .intro-section #design2 {
-    display: unset;
-    position: relative;
-    height: 350px;
-    top: 5px;
-  }
-  .intro-section h1 {
-    font-size: 40px;
-  }
-  .intro-section p {
-    font-size: 24px;
-    width: 75%;
-  }
-  .intro-section .spaced-text {
-    left: 420px;
-    width: 60%;
+  .main-section p {
+    font-size: 19px;
   }
 
   .bottom-nav {
@@ -416,38 +308,30 @@ body {
     top: 0px;
   }
 
-  .hero .container {
-    height: 600px;
-    position: relative;
-    top: 50px;
+  .main-section {
+    padding-top: 120px;
   }
-  .hero .img-hero {
-    height: 600px;
+  .main-section .macchinari-title {
+    height: 150px;
   }
-  .hero h1 {
-    font-size: 86px;
+  .main-section .macchinari-title h1 {
+    top: 35%;
   }
-  .hero p {
-    font-size: 50px;
+  .main-section .staff-title {
+    height: 150px;
   }
-  .hero .text-hero {
-    height: 500px;
-    width: 40%;
+  .main-section .staff-title h1 {
+    top: 35%;
   }
-
-  .intro-section {
-    margin-top: 5em;
-    margin-bottom: 200px;
+  .main-section h1, .main-section p {
+    padding-left: 5rem;
   }
-  .intro-section #design1 {
-    height: 600px;
+  .main-section h1 {
+    font-size: 40px;
   }
-  .intro-section #design2 {
-    height: 450px;
-    width: auto;
-  }
-  .intro-section .spaced-text {
-    left: 550px;
+  .main-section p {
+    font-size: 24px;
+    width: 70%;
   }
 
   .bottom-nav {
@@ -456,4 +340,4 @@ body {
   .bottom-nav a {
     font-size: 30px;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=azienda.css.map */
