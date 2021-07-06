@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 0;
 }
 
 *, *:before, *:before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -19,11 +21,13 @@ body {
   background: #f2f2f2;
   background-size: cover;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
 .navbar {
+  -webkit-box-shadow: 4px 6px 11px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 6px 11px rgba(0, 0, 0, 0.15);
   background-color: white;
   padding: 1em;
   position: fixed;
@@ -31,9 +35,11 @@ body {
   height: 70px;
   z-index: 100;
 }
+
 .navbar nav.menu-btn {
   display: block;
 }
+
 .navbar nav {
   display: none;
   position: fixed;
@@ -45,12 +51,15 @@ body {
   background-color: white;
   padding: 1em;
 }
+
 .navbar nav ul {
   list-style: none;
 }
+
 .navbar nav ul.primary-nav {
   margin-top: 5em;
 }
+
 .navbar nav li a {
   color: var(--text-color);
   text-decoration: none;
@@ -59,27 +68,35 @@ body {
   font-size: 1.3em;
   text-align: right;
 }
+
 .navbar nav li a:hover {
   font-weight: bold;
 }
+
 .navbar nav .secondary-nav {
   margin-top: 2.5em;
 }
+
 .navbar .mobile-menu-exit {
   float: right;
-  margin: 0.5em;
+  margin: .5em;
 }
+
 .navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
   margin: 0;
   background-color: none;
 }
+
 .navbar .mobile-menu {
   cursor: pointer;
   position: relative;
   top: -5px;
 }
+
 .navbar .img-logo {
   position: relative;
   height: 40px;
@@ -92,15 +109,22 @@ body {
   position: relative;
   top: 70px;
 }
+
 .hero .container {
   background-color: white;
   margin: 0;
   padding: 0;
   height: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
+
 .hero .img-hero {
   position: absolute;
   width: 100%;
@@ -110,6 +134,7 @@ body {
   z-index: 1;
   opacity: 80%;
 }
+
 .hero h1 {
   z-index: 2;
   position: absolute;
@@ -118,9 +143,12 @@ body {
   letter-spacing: 8px;
   color: white;
   text-shadow: 4px 6px 11px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 30%;
 }
+
 .hero p {
   z-index: 2;
   position: relative;
@@ -132,13 +160,19 @@ body {
   left: 50%;
   top: 60%;
 }
+
 .hero .text-hero {
   background-color: none;
   height: 122px;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 70%;
 }
 
@@ -150,11 +184,14 @@ body {
   padding: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
-  box-shadow: 0px 4px 8px #00000016;
+  -webkit-box-shadow: 0px 4px 8px #00000016;
+          box-shadow: 0px 4px 8px #00000016;
 }
+
 .intro-section img {
   display: none;
 }
+
 .intro-section h1 {
   position: relative;
   font-weight: normal;
@@ -164,6 +201,7 @@ body {
   text-align: left;
   top: -15px;
 }
+
 .intro-section p {
   position: relative;
   font-weight: normal;
@@ -181,9 +219,11 @@ body {
   border: 1px solid #707070;
   margin-top: 4em;
 }
+
 .bottom-nav ul {
   list-style-type: none;
 }
+
 .bottom-nav a {
   -webkit-text-decoration: line;
           text-decoration: line;
@@ -191,13 +231,18 @@ body {
   font-size: 18px;
   font-weight: 550;
 }
+
 .bottom-nav li {
   padding: 7px;
 }
+
 .bottom-nav .sub-bottom-menu {
   padding-left: 30px;
 }
+
 .bottom-nav .bottom-secondary-nav .riga1, .bottom-nav .bottom-secondary-nav .riga2, .bottom-nav .bottom-secondary-nav .riga3, .bottom-nav .bottom-secondary-nav .riga4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 1em;
 }
@@ -212,30 +257,34 @@ body {
   .mobile-menu-exit, .mobile-menu {
     display: none;
   }
-
   .img-logo {
     position: flex;
     -o-object-fit: cover;
        object-fit: cover;
-    margin-top: 0.8em;
+    margin-top: .8em;
     margin-left: 70px;
   }
-
   .navbar {
     height: auto;
     padding: unset;
     position: absolute;
   }
-
   .navbar .container {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 150px auto;
-    justify-content: unset;
+    -ms-grid-columns: 150px auto;
+        grid-template-columns: 150px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
   }
-
   .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background: none;
     position: unset;
     height: auto;
@@ -243,6 +292,8 @@ body {
     padding: 0;
   }
   .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .navbar nav ul.primary-nav {
@@ -259,7 +310,6 @@ body {
     font-weight: normal;
     background-color: #f1f1f1;
   }
-
   .hero .container {
     height: 220px;
     position: relative;
@@ -279,26 +329,34 @@ body {
     height: 200px;
     width: 50%;
   }
-
   .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .bottom-nav li {
     padding: 5px;
   }
   .bottom-nav .bottom-secondary-nav .riga1, .bottom-nav .bottom-secondary-nav .riga2, .bottom-nav .bottom-secondary-nav .riga3, .bottom-nav .bottom-secondary-nav .riga4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 2em;
   }
 }
+
 @media only screen and (min-width: 1080px) {
   .navbar {
     height: 101px;
   }
   .navbar .container {
-    grid-template-columns: 190px auto;
+    -ms-grid-columns: 190px auto;
+        grid-template-columns: 190px auto;
   }
   .navbar .img-logo {
     margin: unset;
@@ -313,7 +371,6 @@ body {
     position: relative;
     top: 0px;
   }
-
   .hero .container {
     height: 350px;
     position: relative;
@@ -332,25 +389,30 @@ body {
     height: 300px;
     width: 60%;
   }
-
   .intro-section {
     padding: 4em;
     margin-bottom: 150px;
   }
   .intro-section img {
     z-index: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .intro-section .design1 {
     z-index: 2px;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: none;
     width: 100%;
     height: auto;
     margin: unset;
     left: 0em;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .intro-section #design1 {
     display: unset;
@@ -362,13 +424,17 @@ body {
   .intro-section .design2 {
     z-index: 2px;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: none;
     width: 100%;
     height: auto;
     margin: unset;
     left: -1em;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .intro-section #design2 {
     display: unset;
@@ -387,7 +453,6 @@ body {
     left: 420px;
     width: 60%;
   }
-
   .bottom-nav {
     font-size: 20px;
   }
@@ -395,12 +460,14 @@ body {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 1600px) {
   .navbar {
     height: 130px;
   }
   .navbar .container {
-    grid-template-columns: 320px auto;
+    -ms-grid-columns: 320px auto;
+        grid-template-columns: 320px auto;
   }
   .navbar .img-logo {
     margin: unset;
@@ -415,7 +482,6 @@ body {
     position: relative;
     top: 0px;
   }
-
   .hero .container {
     height: 600px;
     position: relative;
@@ -434,7 +500,6 @@ body {
     height: 500px;
     width: 40%;
   }
-
   .intro-section {
     margin-top: 5em;
     margin-bottom: 200px;
@@ -449,11 +514,11 @@ body {
   .intro-section .spaced-text {
     left: 550px;
   }
-
   .bottom-nav {
     font-size: 30px;
   }
   .bottom-nav a {
     font-size: 30px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
