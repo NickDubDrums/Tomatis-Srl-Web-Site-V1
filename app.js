@@ -49,7 +49,7 @@ function checkboundary() {
 }
 */
 
-const slider = document.querySelector('.slider');
+/*const slider = document.querySelector('.slider');
 //const innerSlider = document.querySelector('.slider-inner');
 let pressed = false;
 let startX;
@@ -89,5 +89,9 @@ slider.addEventListener('mousemove', (e)=>{
     const walk = x -startX;
     slider.scrollLeft = scrollLeft - walk;
 
-});
-
+});*/
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });

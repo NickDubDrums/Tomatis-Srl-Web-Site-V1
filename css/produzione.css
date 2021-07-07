@@ -366,27 +366,27 @@ body {
     margin-bottom: 100px;
   }
   .slider-section .slider {
-    position: relative;
-    left: 5%;
+    position: absolute;
+    left: 0px;
     top: 30%;
     width: 100%;
     height: 500px;
     overflow: hidden;
   }
-  .slider-section .slider-inner {
+  .slider-section .carousel {
     position: absolute;
     top: 0;
     left: 0;
-    height: 443px;
-    width: 160%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (430px)[6];
-        grid-template-columns: repeat(6, 430px);
-    pointer-events: none;
+    height: 470px;
+    width: 100%;
   }
-  .slider-section .slide-img {
-    height: 443px;
+  .slider-section .carousel-cell {
+    height: 100%;
+    margin-right: 20px;
+  }
+  .slider-section .flickity-viewport {
+    margin: 0px;
+    left: 0%;
   }
   .bottom-nav {
     font-size: 20px;
@@ -442,27 +442,21 @@ body {
   }
   .slider-section .slider {
     position: relative;
-    left: 7%;
+    left: 0%;
     top: 30%;
     width: 100%;
     height: 550px;
     overflow: hidden;
   }
-  .slider-section .slider-inner {
-    position: absolute;
+  .slider-section .carousel {
+    position: relative;
     top: 0;
     left: 0;
-    height: 443px;
-    width: 160%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (490px)[6];
-        grid-template-columns: repeat(6, 490px);
-    pointer-events: none;
+    height: 470px;
+    width: 100%;
   }
-  .slider-section .slide-img a {
-    pointer-events: auto;
-    cursor: inherit;
+  .slider-section .carousel-cell {
+    width: 25%;
   }
   .bottom-nav {
     position: relative;
