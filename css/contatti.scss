@@ -111,6 +111,7 @@ body {
    
     
 }
+
 .main-section {
         background-color: none;
         position: relative;
@@ -161,7 +162,8 @@ body {
 
         .mappe {
             padding: 2em;
-            width: auto;
+            width: 100%;
+            justify-content: center;
         }
         iframe {
             width: 100%;

@@ -161,7 +161,10 @@ body {
 
 .main-section .mappe {
   padding: 2em;
-  width: auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-section iframe {
