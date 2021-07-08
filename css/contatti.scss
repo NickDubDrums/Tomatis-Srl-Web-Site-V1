@@ -206,16 +206,40 @@ body {
     
 
     .bottom-secondary-nav {
-        
-        
+        padding-left: 6px;
 
         .riga1, .riga2, .riga3, .riga4 {
             display: flex;
             margin: 1em;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            padding-left: 0em;
+            list-style: none;
+        }
+
+        img {
+            margin-left: 0;
+        }
+
+        a {
+            
+            color: var(--text-color);
+        }
+        .indirizzo, .telefono, .mail, .pec {
+            a {
+                text-decoration: none;
+                font-weight: normal;
+            }
+        }
+
+        .indirizzo, .telefono, .mail, .pec {
+            margin-left: 1.5rem;
             
             
-         }
-        
+        } 
     }
 
 
@@ -320,31 +344,31 @@ body {
  
 
     .bottom-nav{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-
-
-       li {
-        padding: 5px;
-        }
-
-        .bottom-secondary-nav {
-        
-        
-
-            .riga1, .riga2, .riga3, .riga4 {
-                display: flex;
-                margin: 2em;
-                
-                
-             }
-            
-        }
-
-        
-
-    }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+ 
+ 
+        li {
+         padding: 5px;
+         }
+ 
+         .bottom-secondary-nav {
+         
+         
+ 
+             .riga1, .riga2, .riga3, .riga4 {
+                 display: flex;
+                 margin: 2em;
+                 
+                 
+              }
+             
+         }
+ 
+         
+ 
+     }
 
 }
 
@@ -457,8 +481,6 @@ body {
 
 
     .bottom-nav {
-        
-        padding-top: 0;
         font-size: 30px;
 
         a {

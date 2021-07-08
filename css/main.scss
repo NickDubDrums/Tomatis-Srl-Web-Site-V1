@@ -230,7 +230,7 @@ body {
 
     padding: 2em;
     border: 1px solid #707070;
-    margin-top: 4em;
+    margin-top: 3em;
     
     ul {
         list-style-type: none;
@@ -253,16 +253,40 @@ body {
     
 
     .bottom-secondary-nav {
-        
-        
+        padding-left: 6px;
 
         .riga1, .riga2, .riga3, .riga4 {
             display: flex;
             margin: 1em;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            padding-left: 0em;
+            list-style: none;
+        }
+
+        img {
+            margin-left: 0;
+        }
+
+        a {
+            
+            color: var(--text-color);
+        }
+        .indirizzo, .telefono, .mail, .pec {
+            a {
+                text-decoration: none;
+                font-weight: normal;
+            }
+        }
+
+        .indirizzo, .telefono, .mail, .pec {
+            margin-left: 1.5rem;
             
             
-         }
-        
+        } 
     }
 
 

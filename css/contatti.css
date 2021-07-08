@@ -200,11 +200,41 @@ body {
   padding-left: 30px;
 }
 
+.bottom-nav .bottom-secondary-nav {
+  padding-left: 6px;
+}
+
 .bottom-nav .bottom-secondary-nav .riga1, .bottom-nav .bottom-secondary-nav .riga2, .bottom-nav .bottom-secondary-nav .riga3, .bottom-nav .bottom-secondary-nav .riga4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 1em;
+}
+
+.bottom-nav .bottom-secondary-nav ul {
+  list-style: none;
+}
+
+.bottom-nav .bottom-secondary-nav li {
+  padding-left: 0em;
+  list-style: none;
+}
+
+.bottom-nav .bottom-secondary-nav img {
+  margin-left: 0;
+}
+
+.bottom-nav .bottom-secondary-nav a {
+  color: var(--text-color);
+}
+
+.bottom-nav .bottom-secondary-nav .indirizzo a, .bottom-nav .bottom-secondary-nav .telefono a, .bottom-nav .bottom-secondary-nav .mail a, .bottom-nav .bottom-secondary-nav .pec a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.bottom-nav .bottom-secondary-nav .indirizzo, .bottom-nav .bottom-secondary-nav .telefono, .bottom-nav .bottom-secondary-nav .mail, .bottom-nav .bottom-secondary-nav .pec {
+  margin-left: 1.5rem;
 }
 
 .footer {
@@ -379,7 +409,6 @@ body {
     top: -130px;
   }
   .bottom-nav {
-    padding-top: 0;
     font-size: 30px;
   }
   .bottom-nav a {
