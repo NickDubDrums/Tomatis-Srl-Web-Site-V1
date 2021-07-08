@@ -95,11 +95,13 @@ body {
   cursor: pointer;
   position: relative;
   top: -5px;
+  padding-right: 15px;
 }
 
 .navbar .img-logo {
   position: relative;
   height: 40px;
+  padding-left: 15px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -114,8 +116,8 @@ body {
 .main-section .macchinari-title {
   background-color: var(--primary-color);
   color: white;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   -webkit-box-shadow: #00000016 0px 8px 8px;
           box-shadow: #00000016 0px 8px 8px;
   width: 100%;
@@ -131,8 +133,8 @@ body {
 .main-section .macchinari-text {
   background-color: var(--secondary-color);
   color: white;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   -webkit-box-shadow: #00000016 0px 8px 8px;
           box-shadow: #00000016 0px 8px 8px;
   width: 100%;
@@ -148,8 +150,8 @@ body {
   margin-top: 1em;
   background-color: var(--primary-color);
   color: white;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   -webkit-box-shadow: #00000016 0px 8px 8px;
           box-shadow: #00000016 0px 8px 8px;
   width: 100%;
@@ -165,8 +167,8 @@ body {
 .main-section .staff-text {
   background-color: var(--secondary-color);
   color: white;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   -webkit-box-shadow: #00000016 0px 8px 8px;
           box-shadow: #00000016 0px 8px 8px;
   width: 100%;

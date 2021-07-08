@@ -95,6 +95,7 @@ body {
   cursor: pointer;
   position: relative;
   top: -5px;
+  padding-right: 15px;
 }
 
 .navbar .img-logo {
@@ -102,6 +103,7 @@ body {
   height: 40px;
   -o-object-fit: contain;
      object-fit: contain;
+  padding-left: 15px;
 }
 
 .hero {
