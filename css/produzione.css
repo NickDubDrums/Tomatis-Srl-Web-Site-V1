@@ -17,24 +17,13 @@
   --text-color:#4A4A4A;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background: #f2f2f2;
   background-size: cover;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
 }
 
 .navbar {
@@ -46,6 +35,7 @@ body {
   width: 100%;
   height: 70px;
   z-index: 100;
+  top: 0px;
 }
 
 .navbar nav.menu-btn {
@@ -118,35 +108,68 @@ body {
   padding-left: 15px;
 }
 
-.box {
-  width: 453px;
-  height: 443px;
-  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+.containersl {
+  background-color: white;
+  height: 800px;
+}
+
+.slider {
+  background-color: white;
+  width: 100%;
+  height: 355px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .box {
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   overflow: hidden;
-  position: absolute;
-  top: 350px;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-top: 100px;
+  margin-left: 10px;
 }
 
-.slide-img {
-  width: 453px;
-  height: 443px;
+.slider .slide-img {
+  width: 200px;
+  height: 200px;
 }
 
-.slide-img img {
+.slider .slide-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.slider .slide-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Intro {
+  background-color: white;
+}
+
+.Intro h1 {
+  font-size: 100px;
 }
 
 .bottom-nav {
-  display: none;
   background-color: white;
   width: 100%;
   position: relative;
@@ -346,11 +369,11 @@ body {
     position: relative;
     top: 0px;
   }
-  .box {
-    top: 400px;
+  .slider {
+    margin-top: 200px;
+    height: 100%;
   }
   .bottom-nav {
-    display: none;
     position: relative;
     font-size: 30px;
   }
