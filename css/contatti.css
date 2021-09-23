@@ -126,7 +126,7 @@ body {
 .main-section h1 {
   display: block;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 30px;
   margin-left: 1em;
 }
 
@@ -153,6 +153,7 @@ body {
 .main-section .bottom-secondary-nav a {
   text-decoration: none;
   color: var(--text-color);
+  font-size: 18px;
 }
 
 .main-section .bottom-secondary-nav .indirizzo, .main-section .bottom-secondary-nav .telefono, .main-section .bottom-secondary-nav .mail, .main-section .bottom-secondary-nav .pec {
@@ -360,6 +361,12 @@ body {
   }
   .main-section {
     padding-top: 135px;
+  }
+  .main-section h1 {
+    font-size: 40px;
+  }
+  .main-section .bottom-secondary-nav a {
+    font-size: 24px;
   }
   .bottom-nav {
     font-size: 20px;

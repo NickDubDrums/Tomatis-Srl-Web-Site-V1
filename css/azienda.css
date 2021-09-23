@@ -117,7 +117,6 @@ body {
   background-color: var(--primary-color);
   color: white;
   padding-left: 2em;
-  padding-right: 2em;
   -webkit-box-shadow: #00000016 0px 8px 8px;
           box-shadow: #00000016 0px 8px 8px;
   width: 100%;
@@ -128,6 +127,7 @@ body {
   position: relative;
   top: 25%;
   font-weight: normal;
+  font-size: 30px;
 }
 
 .main-section .macchinari-text {
@@ -144,6 +144,7 @@ body {
 .main-section .macchinari-text p {
   position: relative;
   font-weight: normal;
+  font-size: 18px;
 }
 
 .main-section .staff-title {
@@ -162,6 +163,7 @@ body {
   position: relative;
   top: 25%;
   font-weight: normal;
+  font-size: 30px;
 }
 
 .main-section .staff-text {
@@ -178,6 +180,7 @@ body {
 .main-section .staff-text p {
   position: relative;
   font-weight: normal;
+  font-size: 18px;
 }
 
 .bottom-nav {
@@ -352,13 +355,17 @@ body {
     top: 0px;
   }
   .main-section {
-    padding-top: 100px;
+    padding-top: 120px;
   }
   .main-section h1, .main-section p {
     padding-left: 3rem;
   }
-  .main-section p {
-    font-size: 19px;
+  .main-section .macchinari-title h1, .main-section .staff-title h1 {
+    font-size: 40px;
+    top: 15%;
+  }
+  .main-section .macchinari-text p, .main-section .staff-text p {
+    font-size: 24px;
   }
   .bottom-nav {
     font-size: 20px;
