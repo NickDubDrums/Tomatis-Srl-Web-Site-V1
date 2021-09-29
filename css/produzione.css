@@ -108,11 +108,6 @@ body {
   padding-left: 15px;
 }
 
-.containersl {
-  background-color: white;
-  height: 800px;
-}
-
 .slider {
   background-color: white;
   width: 100%;
@@ -134,7 +129,8 @@ body {
   font-weight: normal;
   font-size: 30px;
   margin-left: 1em;
-  top: 15%;
+  top: 0px;
+  padding-top: 120px;
 }
 
 .slider .box {
@@ -249,6 +245,14 @@ body {
   color: #000;
 }
 
+@media only screen and (min-width: 430px) {
+  .slider h1 {
+    left: 0px;
+    padding-left: 5px;
+    padding-top: 140px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu-exit, .mobile-menu {
     display: none;
@@ -306,6 +310,16 @@ body {
     font-weight: normal;
     background-color: #f1f1f1;
   }
+  .slider h1 {
+    margin-left: 0em;
+    padding-left: 3rem;
+    top: 0px;
+    padding-top: 145px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    left: 0px;
+  }
   .bottom-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -352,9 +366,12 @@ body {
     margin-top: 130px;
     height: 400px;
   }
+  .slider h1 {
+    padding-top: 160px;
+  }
   .slider .box {
-    width: 230px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
   }
   .bottom-nav {
     font-size: 20px;
@@ -389,9 +406,12 @@ body {
     margin-top: 180px;
     height: 500px;
   }
+  .slider h1 {
+    padding-top: 215px;
+  }
   .slider .box {
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     margin-left: 30px;
   }
   .bottom-nav {

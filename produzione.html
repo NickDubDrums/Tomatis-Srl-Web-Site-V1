@@ -15,6 +15,8 @@
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/lightslider.js"></script>
     
+    <link rel="stylesheet" href="css/modal.css">
+    <script defer src="js/modalScript.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -48,15 +50,43 @@
         </div>
     </div>
 
+<div id="overlay">
+        
+       <!-- <button class="nav-left">nav left</button>
+        <button class="nav-right">nav right</button>-->
+    <div class="modal" >
+        <button data-close-button class="close-button">&times;</button>
+        <div class="modal-1" id="modal" >
+            
+            <div class="modal-header">
+                <div class="title">STUDIO E METODO</div>
+                
+            </div>
+            <div class="modal-body">
+                L’attività prende avvio dalla richiesta del cliente che fornisce il disegno di un componente in lamiera (generalmente si tratta di parti di autovetture o veicoli) del quale intende avviare una produzione e quindi necessita della costruzione degli stampi per realizzarlo.
+                Si studiano le operazioni necessarie alla realizzazione del pezzo, stabilendo tipologia e numero di stampi. Si arriva così alla definizione di un metodo che tenga conto delle caratteristiche della lamiera, delle tolleranze, delle quantità da produrre.
+
+            </div>
+            <div class="modal-box">
+            <div class="modal-img">
+                <img src="img/Metodo 2.jpg" alt="Studio e Metodo">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    
+
     <main class="slider">
 
         <h1>COME NASCE UNO STAMPO</h1>
         
-        <ul id="autoWidth" class="cs-hidden">
+        <ul id="autoWidth" class="cs-hidden" >
             <li class="item-a">
                 <div class="box">
                     <div class="slide-img">
-                        <a href="https://www.google.com/"><img src="img/Metodo 2 Scritta.jpg" alt="Studio e Metodo"></a>
+                        <a class="open-modal" data-modal-target="#modal"></button><img src="img/Metodo 2 Scritta.jpg" alt="Studio e Metodo"></a>
+                        
                     </div>
                 </div>
             </li>
@@ -96,11 +126,9 @@
                 </div>
             </li>
         </ul>
-       
+        
        
     </main>
-
-
 
 <br>
     

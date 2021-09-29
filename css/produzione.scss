@@ -113,10 +113,7 @@ body {
    
     
 }
-.containersl{
-    background-color: white;
-    height: 800px;
-}
+
 .slider {
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -131,7 +128,8 @@ body {
         font-weight: normal;
         font-size: 30px;
         margin-left: 1em;
-        top: 15%;
+        top: 0px;
+        padding-top: 120px;
     }
 
     .box{
@@ -246,7 +244,18 @@ body {
 }
 
 
+@media only screen and (min-width:430px) {
 
+
+    .slider{
+        h1{
+           left: 0px;
+           padding-left: 5px;
+           padding-top: 140px;
+        }
+    }
+
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -311,6 +320,17 @@ body {
         
     }
 
+    .slider{
+        h1{
+            margin-left: 0em;
+            padding-left: 3rem;
+            top: 0px;
+            padding-top: 145px;
+            justify-content: left;
+            left: 0px;
+            
+        }
+    }
 
     .bottom-nav{
        display: flex;
@@ -372,19 +392,22 @@ body {
 
     }
 
+
     .slider{
         margin-top: 130px;
         height: 400px;
 
+        h1{
+            padding-top: 160px;
+        }
+
 
         .box{
-            width: 230px;
-            height: 230px;
+            width: 300px;
+            height: 300px;
         }
     }
 
-    
-   
 
     .bottom-nav {
         font-size: 20px;
@@ -433,10 +456,15 @@ body {
         margin-top: 180px;
         height: 500px;
 
+        h1{
+            padding-top: 215px;
+        }
+
+
 
         .box{
-            width: 300px;
-            height: 300px;
+            width: 380px;
+            height: 380px;
             margin-left: 30px;
         }
     }

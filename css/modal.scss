@@ -1,0 +1,136 @@
+* {margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 0;
+}
+
+*, *:before, *:before {
+	box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #023B72;
+    --secondary-color: #AAAAAA;
+    --text-color:#4A4A4A;
+}
+
+.open-modal {
+    pointer-events: all;
+    
+}
+.modal-1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 30px;
+    z-index: 10px;
+    background-color: rgba($color: #013A71, $alpha: .75);
+    width: 1263px;
+    max-width: 80%;
+    height: 792px;
+}
+
+
+
+.modal-1.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    
+    .title{
+        position: absolute;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        padding-left: 2em;
+        right: 10%;
+        top: 25px;
+    }
+}
+
+.modal-body {
+    color: white;
+    opacity: 1;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 2em;
+    margin-right: 50%;
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    position: fixed;
+    color: white;
+    width: 20px;
+    left: 90%;
+    font-size: 60px;
+    top: 20px;
+    
+}
+/*.nav-left, .nav-right {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    position: fixed;
+}*/
+.nav-left{
+    width: 20px;
+    left: 91%;
+    font-size: 20px;
+    top: 50%;
+}
+.nav-right{
+    width: 20px;
+    left: 1%;
+    font-size: 20px;
+    top: 50%;
+}
+
+.modal-body{
+    padding: 10px 15px;
+}
+
+.modal-box{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 100px; 
+    margin-left: 10px;
+    position: absolute;
+    top: 30px;
+    right: 6%;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2) ;
+    backdrop-filter: blur(15px);
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+    z-index: 100;
+}
