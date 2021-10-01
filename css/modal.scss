@@ -14,42 +14,53 @@
     --text-color:#4A4A4A;
 }
 
-.open-modal {
+.modal-open {
     pointer-events: all;
     
 }
+
 .modal-1{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 200ms ease-in-out;
     border-radius: 30px;
     z-index: 10px;
     background-color: rgba($color: #013A71, $alpha: .75);
     width: 1263px;
     max-width: 80%;
     height: 670px;
+    max-height: 80%;
 }
 
-.modal-1.active {
-    transform: translate(-50%, -50%);
-}
+
+
 
 .modal-header {
     padding: 0px;
     margin: 0;
     
-    .title{
+    .title, .title3, .title5{
         position: absolute;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: normal;
         color: white;
         text-align: center;
         padding-left: 0em;
         right: 50%;
         transform: translate(50%, -50%);
-        top: 50px;
+        top: 80px;
+    }
+    .title2, .title4, .title6{
+        position: absolute;
+        font-size: 28px;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+        padding-left: 0em;
+        right: 50%;
+        transform: translate(50%, -50%);
+        top: 80px;
     }
 }
 
@@ -59,7 +70,7 @@
     position: relative;
     color: white;
     opacity: 1;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 30px;
     left: 50%;
     top: 50%;
@@ -77,8 +88,9 @@
     color: white;
     width: 20px;
     left: 85%;
-    font-size: 70px;
-    top: 10px;
+    font-size: 60px;
+    top: 0px;
+    z-index: 50px;
     
 }
 
@@ -99,7 +111,7 @@
     }
 }
 
-#overlay {
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6{
     position: fixed;
     opacity: 0;
     transition: 200ms ease-in-out;
@@ -112,10 +124,44 @@
     pointer-events: none;
 }
 
-#overlay.active {
+#overlay1.active, #overlay2.active, #overlay3.active, #overlay4.active, #overlay5.active, #overlay6.active {
     pointer-events: all;
     opacity: 1;
     z-index: 100;
+}
+
+@media only screen and (min-width: 354px){
+    .modal-1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 200ms ease-in-out;
+        border-radius: 30px;
+        z-index: 10px;
+        background-color: rgba($color: #013A71, $alpha: .75);
+        width: 1263px;
+        max-width: 80%;
+        height: 670px;
+        max-height: 80%;
+    }
+    .close-button{
+        font-size: 70px;
+    }
+    .modal-body{
+        font-size: 17px;
+    }
+
+    .modal-header{
+        .title, .title3, .title5{
+            font-size: 30px;
+            top: 50px;
+        }
+        .title2, .title4, .title6{
+            font-size: 30px;
+            top: 50px;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -124,7 +170,17 @@
         padding: 0;
         margin: 0;
 
-        .title{
+        .title, .title3, .title5{
+            text-align: center;
+            font-size: 35px;
+            padding-left: 0;
+            right: 50%;
+            transform: translate(50%, -50%);
+            top: 80px;
+            margin-right: 0;
+           
+        }
+        .title2, .title4, .title6{
             text-align: center;
             font-size: 35px;
             padding-left: 0;
@@ -152,7 +208,14 @@
 
     .modal-header{
         padding: 10px 15px;
-        .title{
+        .title, .title3, .title5{
+            transform: translate(0%, 0%);
+            font-size: 40px;
+            padding-left: 0;
+            right: 65px;
+            top: 50px;
+        }
+        .title2, .title4, .title6{
             transform: translate(0%, 0%);
             font-size: 40px;
             padding-left: 0;
@@ -184,7 +247,13 @@
 @media only screen and (min-width: 1355px) {
 
     .modal-header{
-        .title{
+        .title, .title3, .title5{
+            font-size: 45px;
+            padding-left: 0;
+            right: 70px;
+            top: 50px;
+        }
+        .title2, .title4, .title6{
             font-size: 45px;
             padding-left: 0;
             right: 70px;
@@ -213,7 +282,17 @@
     .modal-header {
         padding: 10px 15px;
         
-        .title{
+        .title, .title3, .title5{
+            position: absolute;
+            font-size: 50px;
+            font-weight: normal;
+            color: white;
+            opacity: 1;
+            padding-left: 2em;
+            right: 100px;
+            top: 25px;
+        }
+        .title2, .title4, .title6{
             position: absolute;
             font-size: 50px;
             font-weight: normal;
