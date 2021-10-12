@@ -346,4 +346,42 @@
     height: 100%;
   }
 }
+
+@media only screen and (min-height: 370px) {
+  .modal-header .title, .modal-header .title3, .modal-header .title5 {
+    font-size: 20px;
+    padding-left: 0;
+    right: 180px;
+    top: 50px;
+  }
+  .modal-header .title2, .modal-header .title4, .modal-header .title6 {
+    font-size: 20px;
+    padding-left: 0;
+    right: 180px;
+    top: 50px;
+  }
+  .modal-body {
+    margin-top: 0px;
+    padding-right: 50%;
+    font-size: 11.5px;
+  }
+  .modal-box {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 50px;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+  }
+  .modal-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .close-button {
+    left: 92%;
+  }
+}
 /*# sourceMappingURL=modal.css.map */
