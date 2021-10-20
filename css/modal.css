@@ -347,7 +347,7 @@
   }
 }
 
-@media only screen and (min-height: 370px) {
+@media only screen and (max-height: 400px) {
   .modal-header .title, .modal-header .title3, .modal-header .title5 {
     font-size: 20px;
     padding-left: 0;

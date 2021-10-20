@@ -301,7 +301,7 @@ body {
   .slider h1 {
     left: 0px;
     padding-left: 5px;
-    padding-top: 140px;
+    padding-top: 120px;
   }
 }
 
@@ -468,7 +468,7 @@ body {
     top: 0px;
   }
   .slider {
-    margin-top: 180px;
+    margin-top: 150px;
     height: 500px;
   }
   .slider h1 {
