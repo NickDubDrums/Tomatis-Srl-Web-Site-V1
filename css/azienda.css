@@ -167,6 +167,25 @@ body {
   font-size: 30px;
 }
 
+.main-section .ISO-title {
+  margin-top: 1em;
+  background-color: var(--primary-color);
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  -webkit-box-shadow: #00000016 0px 8px 8px;
+          box-shadow: #00000016 0px 8px 8px;
+  width: 100%;
+  height: auto;
+}
+
+.main-section .ISO-title h1 {
+  position: relative;
+  top: 25%;
+  font-weight: normal;
+  font-size: 30px;
+}
+
 .main-section .staff-text {
   background-color: var(--secondary-color);
   color: white;
@@ -255,6 +274,12 @@ body {
   text-align: center;
   font-size: 9px;
   color: #000;
+}
+
+@media only screen and (min-width: 526px) {
+  .main-section .ISO-title {
+    height: 80px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -362,7 +387,7 @@ body {
   .main-section h1, .main-section p {
     padding-left: 3rem;
   }
-  .main-section .macchinari-title h1, .main-section .staff-title h1 {
+  .main-section .macchinari-title h1, .main-section .staff-title h1, .main-section .ISO-title h1 {
     font-size: 40px;
     top: 15%;
   }
@@ -407,10 +432,10 @@ body {
   .main-section .macchinari-title h1 {
     top: 35%;
   }
-  .main-section .staff-title {
+  .main-section .staff-title, .main-section .ISO-title {
     height: 150px;
   }
-  .main-section .staff-title h1 {
+  .main-section .staff-title h1, .main-section .ISO-title h1 {
     top: 35%;
   }
   .main-section h1, .main-section p {

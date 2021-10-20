@@ -173,6 +173,23 @@ body {
                     font-size: 30px;
             }
     }
+    .ISO-title {
+        margin-top: 1em;
+        background-color: var(--primary-color);
+        color: white;
+        padding-left: 2em;
+        padding-right: 2em;
+        box-shadow: #00000016 0px 8px 8px;
+        width: 100%;
+        height: auto;
+
+                h1 {
+                    position: relative;
+                    top: 25%;
+                    font-weight: normal;
+                    font-size: 30px;
+            }
+    }
 
     .staff-text {
         background-color: var(--secondary-color);
@@ -276,7 +293,14 @@ body {
 }
 
 
-
+@media only screen and (min-width: 526px) {
+    
+    .main-section{
+    .ISO-title {
+        height: 80px;
+    }
+}
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -412,7 +436,7 @@ body {
             padding-left: 3rem;
         }
 
-        .macchinari-title, .staff-title {
+        .macchinari-title, .staff-title, .ISO-title {
             h1{
                 font-size: 40px;
                 top: 15%;
@@ -480,7 +504,7 @@ body {
             }
         }
 
-        .staff-title {
+        .staff-title, .ISO-title {
             height:150px;
 
             h1 {
