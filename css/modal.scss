@@ -410,3 +410,16 @@
     }
     
 }
+
+@media only screen and (max-height: 770px){
+
+    .modal-header{
+        .title, .title2, .title3, .title4, .title5, .title6{
+            font-size: 20px;
+        }
+    }
+    .modal-body{
+        font-size: 15px;
+    }
+
+}

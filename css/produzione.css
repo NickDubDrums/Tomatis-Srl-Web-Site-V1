@@ -196,7 +196,7 @@ body {
 .realizzazioni {
   background-color: white;
   width: 100%;
-  height: 240px;
+  height: auto;
   margin-top: 0px;
   display: block;
   -webkit-box-pack: center;
@@ -205,6 +205,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 2em;
 }
 
 .realizzazioni h1 {
@@ -217,11 +218,11 @@ body {
 }
 
 .realizzazioni p {
-  margin-left: 1.8em;
+  padding-left: 3em;
 }
 
 .realizzazioni p a {
-  font-size: 18px;
+  font-size: 16px;
   color: black;
 }
 
@@ -430,12 +431,15 @@ body {
     height: 340px;
   }
   .realizzazioni {
-    height: 280px;
+    height: auto;
   }
   .realizzazioni h1, .stampi h1 {
     font-size: 40px;
   }
   .realizzazioni p, .stampi p {
+    font-size: 24px;
+  }
+  .realizzazioni p a, .stampi p a {
     font-size: 24px;
   }
   .bottom-nav {

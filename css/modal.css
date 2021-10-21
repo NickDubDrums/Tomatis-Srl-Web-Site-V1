@@ -384,4 +384,13 @@
     left: 92%;
   }
 }
+
+@media only screen and (max-height: 770px) {
+  .modal-header .title, .modal-header .title2, .modal-header .title3, .modal-header .title4, .modal-header .title5, .modal-header .title6 {
+    font-size: 20px;
+  }
+  .modal-body {
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=modal.css.map */

@@ -185,11 +185,12 @@ body {
 .realizzazioni{
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 240px;
+    height: auto;
     margin-top:0px;
     display: block;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    padding-bottom: 2em;
     h1 {
         position: relative;
         font-weight: normal;
@@ -199,14 +200,15 @@ body {
         padding-top: 20px;
     }
     p{
-        margin-left: 1.8em;
+        padding-left: 3em;
 
         a{
-        font-size: 18px;
+        font-size: 16px;
         color: black;
         }
     }
 }
+
 
 .bottom-nav{
     
@@ -457,7 +459,7 @@ body {
         height: 340px;
     }
     .realizzazioni{
-        height: 280px;
+        height: auto;
     }
     .realizzazioni, .stampi {
         h1{
@@ -466,6 +468,9 @@ body {
         }
         p{
             font-size: 24px;
+            a{
+                font-size: 24px;
+            }
         }
     }
 
