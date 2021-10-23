@@ -411,7 +411,9 @@
     
 }
 
-@media only screen and (max-height: 770px){
+
+
+@media only screen and (max-height: 792px){
 
     .modal-header{
         .title, .title2, .title3, .title4, .title5, .title6{
@@ -420,6 +422,18 @@
     }
     .modal-body{
         font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-height: 633px){
+    .modal-header{
+        .title, .title2, .title3, .title4, .title5, .title6{
+            font-size: 18px;
+        }
+    }
+    .modal-body{
+        font-size: 13px;
     }
 
 }
