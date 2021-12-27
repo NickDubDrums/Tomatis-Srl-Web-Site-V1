@@ -245,6 +245,21 @@ body {
   text-align: center;
   font-size: 9px;
   color: #000;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer h1, .footer h2 {
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.footer h2 a {
+  color: black;
+}
+
+.footer p {
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -303,6 +318,10 @@ body {
   .navbar nav li a:hover {
     font-weight: normal;
     background-color: #f1f1f1;
+  }
+  .footer {
+    padding-right: 15%;
+    padding-left: 15%;
   }
   .main-section .riga1, .main-section .riga2, .main-section .riga3, .main-section .riga4 {
     padding: .5em;
@@ -423,6 +442,10 @@ body {
   }
   .bottom-nav a {
     font-size: 30px;
+  }
+  .footer {
+    padding-right: 25%;
+    padding-left: 25%;
   }
 }
 /*# sourceMappingURL=contatti.css.map */

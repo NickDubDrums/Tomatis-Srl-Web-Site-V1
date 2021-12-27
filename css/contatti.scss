@@ -252,6 +252,19 @@ body {
     text-align: center;
     font-size: 9px;
     color: #000;
+    padding-left: 5%;
+    padding-right: 5%;
+    h1, h2 {
+        font-weight: normal;
+        margin-top: 20px;
+    }
+    h2 a {
+        color: black;
+    }
+    p {
+        margin-top: 20px;
+    }
+
 }
 
 
@@ -317,8 +330,15 @@ body {
                 }
         }
 
+       
         
     }
+
+    .footer {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
 
 
     .main-section {
@@ -497,6 +517,10 @@ body {
         a {
             font-size: 30px;
         }
+    }
+    .footer {
+        padding-right: 25%;
+        padding-left: 25%;
     }
 
 
