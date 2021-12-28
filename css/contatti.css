@@ -130,7 +130,7 @@ body {
   margin-left: 1em;
 }
 
-.main-section .bottom-secondary-nav .riga1, .main-section .bottom-secondary-nav .riga2, .main-section .bottom-secondary-nav .riga3, .main-section .bottom-secondary-nav .riga4 {
+.main-section .bottom-secondary-nav .riga1, .main-section .bottom-secondary-nav .riga2, .main-section .bottom-secondary-nav .riga3, .main-section .bottom-secondary-nav .riga4, .main-section .bottom-secondary-nav .riga5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,13 +150,18 @@ body {
   margin-left: 0;
 }
 
-.main-section .bottom-secondary-nav a {
+.main-section .bottom-secondary-nav .riga5 img {
+  height: 25px;
+  margin-top: 5px;
+}
+
+.main-section .bottom-secondary-nav a, .main-section .bottom-secondary-nav p {
   text-decoration: none;
   color: var(--text-color);
   font-size: 18px;
 }
 
-.main-section .bottom-secondary-nav .indirizzo, .main-section .bottom-secondary-nav .telefono, .main-section .bottom-secondary-nav .mail, .main-section .bottom-secondary-nav .pec {
+.main-section .bottom-secondary-nav .indirizzo, .main-section .bottom-secondary-nav .telefono, .main-section .bottom-secondary-nav .mail, .main-section .bottom-secondary-nav .pec, .main-section .bottom-secondary-nav .iva {
   margin-left: 1.5rem;
 }
 
@@ -323,7 +328,7 @@ body {
     padding-right: 15%;
     padding-left: 15%;
   }
-  .main-section .riga1, .main-section .riga2, .main-section .riga3, .main-section .riga4 {
+  .main-section .riga1, .main-section .riga2, .main-section .riga3, .main-section .riga4, .main-section .riga5 {
     padding: .5em;
   }
   .main-section .mappe {
@@ -349,7 +354,7 @@ body {
   .bottom-nav li {
     padding: 5px;
   }
-  .bottom-nav .bottom-secondary-nav .riga1, .bottom-nav .bottom-secondary-nav .riga2, .bottom-nav .bottom-secondary-nav .riga3, .bottom-nav .bottom-secondary-nav .riga4 {
+  .bottom-nav .bottom-secondary-nav .riga1, .bottom-nav .bottom-secondary-nav .riga2, .bottom-nav .bottom-secondary-nav .riga3, .bottom-nav .bottom-secondary-nav .riga4, .bottom-nav .bottom-secondary-nav .riga5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -384,7 +389,7 @@ body {
   .main-section h1 {
     font-size: 40px;
   }
-  .main-section .bottom-secondary-nav a {
+  .main-section .bottom-secondary-nav a, .main-section .bottom-secondary-nav p {
     font-size: 24px;
   }
   .bottom-nav {
@@ -423,7 +428,7 @@ body {
   .main-section h1 {
     font-size: 40px;
   }
-  .main-section a {
+  .main-section a, .main-section p {
     font-size: 28px;
   }
   .main-section .container {

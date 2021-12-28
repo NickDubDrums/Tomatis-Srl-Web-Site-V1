@@ -133,7 +133,7 @@ body {
         }
         .bottom-secondary-nav {
 
-            .riga1, .riga2, .riga3, .riga4 {
+            .riga1, .riga2, .riga3, .riga4, .riga5 {
                 display: flex;
                 margin: 2em;
             }
@@ -149,13 +149,18 @@ body {
                 margin-left: 0;
             }
 
-            a {
+            .riga5 img {
+                height: 25px;
+                margin-top: 5px;
+            }
+ 
+            a, p {
                 text-decoration: none;
                 color: var(--text-color);
                 font-size: 18px;
             }
 
-            .indirizzo, .telefono, .mail, .pec {
+            .indirizzo, .telefono, .mail, .pec, .iva {
                 margin-left: 1.5rem;
                 
             } 
@@ -346,7 +351,7 @@ body {
         
 
 
-        .riga1, .riga2, .riga3, .riga4 {
+        .riga1, .riga2, .riga3, .riga4, .riga5 {
             padding: .5em;
         }
 
@@ -380,7 +385,7 @@ body {
          
          
  
-             .riga1, .riga2, .riga3, .riga4 {
+             .riga1, .riga2, .riga3, .riga4, .riga5 {
                  display: flex;
                  margin: 2em;
                  
@@ -434,7 +439,7 @@ body {
             font-size: 40px;
         }
         .bottom-secondary-nav{
-        a {
+        a, p {
             font-size: 24px;
         }
     }
@@ -489,7 +494,7 @@ body {
         h1 {
             font-size: 40px;
         }
-        a {
+        a, p {
             font-size: 28px;
         }
 
